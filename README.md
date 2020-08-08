@@ -5,7 +5,7 @@ Schedule your Tasks and addNotes To keep your day smooth
 
 <h>Loading Animations<h>
 <br>
-<img src="images/pic1.png" height=700 width=350/>
+<img src="images/pic1.png" height=500 width=250/>
 <br>
 <img src="images/pic2.png" height=700 width=350/>
 <br>
