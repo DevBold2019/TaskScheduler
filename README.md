@@ -1,8 +1,10 @@
 # TaskScheduler
 Schedule your Tasks and addNotes To keep your day smooth
-Check Out the Screenshots
+<br>
+<h1>Check Out the Screenshots</h1>
 
 Loading Animations
+<br>
 <img src="images/pic1.png" height=700 width=350/>
 <br>
 <img src="images/pic2.png" height=700 width=350/>
@@ -61,6 +63,6 @@ Profile,TrackProgress in this fragment
 <br>
 <img src="images/pic16.png" height=700 width=350/>
 <br>
-<h2>I will be adding more features </h2>
+<h1>I will be adding more features </h1>
 <br>
-<h2>I have already made a desktop application that syncs data with this app</h2>
+<h1>I have already made a desktop application that syncs data with this app</h1>
