@@ -3,7 +3,7 @@ Schedule your Tasks and addNotes To keep your day smooth
 <br>
 <h1>Check Out the Screenshots</h1>
 
-Loading Animations
+<h>Loading Animations<h>
 <br>
 <img src="images/pic1.png" height=700 width=350/>
 <br>
