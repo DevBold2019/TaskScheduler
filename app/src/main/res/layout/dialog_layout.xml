@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:orientation="vertical"
+    android:padding="@dimen/common_10_dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Task"
+        android:textColor="#000"
+        android:id="@+id/newTask"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/common_5_dp"
+        android:background="#808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newNote"
+        android:text="New Note"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/common_5_dp"
+        android:background="#808080"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Check List"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_margin="@dimen/common_5_dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

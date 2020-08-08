@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addToolbar"
+        android:elevation="5dp"
+        app:titleTextColor="#FFF"
+        app:title="New Task"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/addToolbar"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newNoteCard"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/common_10_dp"
+        android:layout_marginLeft="@dimen/common_20_dp"
+        android:layout_marginRight="@dimen/common_20_dp"
+        android:layout_marginTop="@dimen/common_30_dp"
+        app:layout_constraintTop_toBottomOf="@+id/addToolbar"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/common_10_dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:maxHeight="150dp"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:id="@+id/new_Note_Title"
+            android:hint="Enter title here"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_margin="@dimen/common_10_dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:maxHeight="150dp"
+            android:id="@+id/new_note_description"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:hint="Description here"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a color"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_margin="@dimen/common_10_dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_20_dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:id="@+id/card1"
+                    android:background="@drawable/circle_drawable"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:background="#00FF00"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:background="#DC143C"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:background="#FF1493"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="@dimen/common_30_dp"
+                    android:layout_height="@dimen/common_30_dp"
+                    android:background="#4B0082"
+                    android:layout_margin="10dp" />
+
+
+            </RadioGroup>
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_10_dp"
+            android:id="@+id/btnAddNewNote"
+            android:textColor="#fff"
+            android:background="@drawable/buttons_background"
+            android:text="Save"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/newTaskCard"
+        app:layout_constraintTop_toBottomOf="@+id/addToolbar"
+        android:layout_marginLeft="@dimen/common_20_dp"
+        android:layout_marginRight="@dimen/common_20_dp"
+        android:layout_marginTop="@dimen/common_30_dp"
+        app:cardBackgroundColor="#f2f2f2"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="@dimen/common_10_dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Title"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex (Github repositiory)"
+                    android:id="@+id/titleEditText"
+                    android:layout_margin="@dimen/common_5_dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Task description"
+                    android:id="@+id/descriptionEditText"
+                    android:layout_margin="@dimen/common_5_dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="5dp"
+                    android:background="#808080"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_5_dp"
+                    android:id="@+id/dueDate"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Due Date : "
+                        android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anytime"
+                        android:textSize="14sp"
+                        android:id="@+id/dueDateText"
+                       android:textStyle="italic"
+                        android:textColor="#000"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Save Task"
+                    android:id="@+id/saveTaskButton"
+                    android:textColor="#fff"
+                    android:background="@drawable/buttons_background"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
